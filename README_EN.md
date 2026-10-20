@@ -1,6 +1,6 @@
 # Tool Guard: restrict dangerous tools to admin private chat
 
-> AstrBot plugin · Trim tool availability per session, no core patches
+> AstrBot plugin · Per-session tool trimming with the native remove_tool
 
 ## The problem
 
