@@ -1,0 +1,14 @@
+name: astrbot_plugin_tool_guard
+display_name: 工具守卫
+desc: "按会话裁剪危险工具。默认把 future_task（定时唤醒自己）与 browser_*（Playwright 受控浏览器）限制在管理员私聊，群里和陌生人会话直接摘掉——future_task 的 create 没有权限门槛且到点投递绕过整条 pipeline，浏览器工具则能操作宿主机。支持 `前缀*` 通配。框架原生 remove_tool，不改 AstrBot 核心。"
+short_desc: 定时任务/浏览器等危险工具仅管理员私聊可用
+author: Randy Lua
+repo: https://github.com/RandyLuaW/astrbot_plugin_tool_guard
+version: 1.1.0
+astrbot_version: ">=4.24.0"
+support_platforms:
+  - aiocqhttp
+tags:
+  - 安全
+  - 工具
+  - 风控

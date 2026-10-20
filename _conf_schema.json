@@ -1,0 +1,22 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "启用工具守卫。关闭后所有会话都能用受限工具。"
+  },
+  "restricted_tools": {
+    "type": "list",
+    "default": ["future_task"],
+    "description": "要限制的工具名列表。只有管理员私聊能用这些工具。支持 `前缀*` 通配，例如 `browser_*` 会匹配全部浏览器工具。"
+  },
+  "allow_admin_private": {
+    "type": "bool",
+    "default": true,
+    "description": "管理员私聊是否放行。关闭后等于所有人都不能用。"
+  },
+  "log_once": {
+    "type": "bool",
+    "default": true,
+    "description": "每个会话只记一次摘除日志，避免刷屏。"
+  }
+}
